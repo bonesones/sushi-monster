@@ -34,7 +34,7 @@ function openBurger(){
         } else {
             clearTimeout(timerId);
         }
-    }, 600);
+    }, 500);
 }
 
 function closeBurger(){
