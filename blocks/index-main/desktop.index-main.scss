@@ -1,0 +1,45 @@
+@media screen and (min-width: 1000px){
+
+    .index-main{
+        padding-top: 4rem;
+
+        &-title{
+
+            &__header{
+                font-size: 44px;
+                @media (max-width: 1180px){
+                    font-size: 38px;
+                }
+            }
+
+            &__description{
+                font-size: 14px;
+                @media (max-width: 1180px){
+                    font-size: 12px;               
+                }
+            }
+        }
+
+        &__link{
+            font-size: 18px;
+            padding: 1rem 2.5rem;
+            @media (max-width: 1180px){
+                padding: 0.7rem 1.5rem;
+                font-size: 16px;
+            }
+        }
+
+        &__image{
+            position: relative;
+            left: 5rem;
+
+            @media (max-width: 1180px){
+                left: 4rem;
+            }
+
+            @media (max-width: 1125px){
+                left: 2rem;
+            }
+        }
+    }
+}

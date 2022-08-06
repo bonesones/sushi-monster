@@ -1,0 +1,10 @@
+@media screen and (min-width: 1000px) {
+    .page{
+        padding: 10px 100px;
+
+        @media (max-width: 1120px){
+            padding: 10px 40px;
+        }
+    }
+
+}

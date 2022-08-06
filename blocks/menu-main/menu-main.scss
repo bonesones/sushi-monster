@@ -1,0 +1,14 @@
+.menu-main{
+
+    &-nav-sidebar{
+
+        ul{
+            list-style-type: none;
+        }
+
+        &__item{
+            background-color: inherit;
+            border: none;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+doctype html
+html(lang = "ru")
+    head 
+        meta(charset = "utf-8")
+        meta(name = "viewport" content = "width=device-width, initial-scale=1.0")
+        title Суши-монстр | Главная
+        link(rel = "stylesheet" href = "main.css")
+    body.page
+        //-Including header
+        include ./blocks/header/header.pug
+        
+        //-including main
+        include ./blocks/index-main/index-main.pug
+        
+        script(src = "script.js") 

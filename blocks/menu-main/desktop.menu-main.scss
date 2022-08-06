@@ -1,0 +1,98 @@
+@media screen and (min-width: 1000px){
+    .menu-main{
+
+        margin-top: 1.5rem;
+
+        &__category{
+            display: inline-block;
+            font-family: "Montserrat-SemiBold";
+            font-size: 26px;
+            margin-left: 30%;
+        }
+        
+        &-nav-sidebar{
+
+            display: flex;
+
+            &__list{
+                display: flex;
+                flex-direction: column;
+                gap: 26px;
+                padding: 0;
+
+                li:last-child{
+                    button::after{
+                        content: url("images/show-more.svg");
+                        position: relative;
+                        top: 2px;
+                        left: 0.5rem;
+                    }
+                }
+
+            }
+
+            &__item{
+                font-family: "Montserrat-Medium";
+                font-size: 14px;
+                width: 189px;
+                height: 36px;
+
+                text-align: start;
+
+                &:hover{
+                    
+                        background: url("images/active-menu.svg");
+                        text-align: center;
+                    
+                }
+                
+                &_active{
+                    background: url("images/active-menu.svg");
+                    text-align: center;
+                }
+
+
+            }
+
+            &__extra-list{
+
+                &_visible{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    justify-content: space-around;
+                    align-content: center;
+                    height: -webkit-max-content;
+                    height: -moz-max-content;
+                    height: max-content;
+                    padding: 20px 15px;
+                    position: absolute;
+                    background-color: white;
+                    z-index: 1;
+                    bottom: 3rem;
+                    left: 8rem;
+                    border-radius: 10px;
+
+                    li{
+                        text-align: center;
+                    }
+                }
+
+                &_hidden{
+                    li{
+                        display: none;
+                    }
+                    display: none;
+                }
+            }
+
+            &::after{
+                content: '';
+                background-color: rgba(0, 0, 0, 0.42);
+                width: 2px;
+                margin-left: 1.2rem;
+                height: inherit;
+            }
+        }
+    }
+}

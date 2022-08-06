@@ -1,0 +1,37 @@
+@import "fonts";
+.header{
+
+    &__name{
+        align-self: center;
+        margin: 0;
+        font-family: "Montserrat-Bold";
+        font-size: 26px;
+    }
+
+    &-menu{
+
+        &__list{
+            li{
+                list-style-type: none;
+            }
+        }
+
+        &__link{
+            color: black;
+            text-decoration: none;
+            font-family: "Montserrat-Medium";
+            font-size: clamp(10px, 16px, 18px);
+
+            &_disabled{
+                pointer-events: none;
+            }
+
+        }
+
+        &__order-total-sum{
+            font-family: "Montserrat-Regular";
+            letter-spacing: 3px;
+        }
+    }
+
+}

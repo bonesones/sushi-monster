@@ -1,0 +1,26 @@
+header.header 
+    div.header__logo
+        img.header__image(src = "images/logo.svg")
+        span.header__name суши-монстр
+    div.header-menu
+        button.header-menu__button.button(type = "button")
+            svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px")
+                path(fill-rule="evenodd"  fill="rgb(0, 0, 0)" d="M-0.000,-0.000 L31.000,-0.000 L31.000,2.000 L-0.000,2.000 L-0.000,-0.000 Z")
+                path(fill-rule="evenodd"  fill="rgb(0, 0, 0)" d="M-0.000,7.000 L31.000,7.000 L31.000,9.000 L-0.000,9.000 L-0.000,7.000 Z")
+                path(fill-rule="evenodd"  fill="rgb(0, 0, 0)" d="M-0.000,14.000 L31.000,14.000 L31.000,16.000 L-0.000,16.000 L-0.000,14.000 Z")
+
+
+        div.header-menu-container.header-menu-container_closed   
+            nav.header-menu__nav.header-menu__nav_invisible
+                ul.header-menu__list
+                    each name, index in["Главная", "Меню", "Доставка", "Контакты"]
+                        li
+                            if index == 1
+                                a.header-menu__link.header-menu__link_active.header-menu__link_disabled(href = "#")= name
+                            else 
+                                a.header-menu__link(href = "#")= name
+            div.header-menu__shopping-basket.header-menu__shopping-basket_invisible
+                img.header-menu__image(src = "images/basket.png" width = "34" height = "34")
+                span.header-menu__order-total-sum 1740 р.
+
+        

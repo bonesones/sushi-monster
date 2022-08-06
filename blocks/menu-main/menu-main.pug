@@ -1,0 +1,15 @@
+main.menu-main 
+    h1.menu-main__category Популярное
+    nav.menu-main-nav-sidebar
+        ul.menu-main-nav-sidebar__list
+            each name, index in["Популярное", "Сеты", "Роллы классические", "Роллы запечённые", "Роллы Жаренные", "Суши", "Ещё"]
+                li 
+                    if index == 0
+                        button.menu-main-nav-sidebar__item.menu-main-nav-sidebar__item_active(type = "button")= name
+                    else
+                        button.menu-main-nav-sidebar__item(type = "button")= name
+        ul.menu-main-nav-sidebar__extra-list_hidden
+            each categ, index in["Закуски", "Напитки", "Дополнительно"]
+                li 
+                    button.menu-main-nav-sidebar__item(type = "button")= categ
+

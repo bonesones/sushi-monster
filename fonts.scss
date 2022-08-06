@@ -1,0 +1,12 @@
+$fonts-list: "Monstserrat-Regular", "Montserrat-Medium", "Montserrat-SemiBold", "Montserrat-Bold";
+
+@mixin getFonts(){
+    @each $font in $fonts-list{
+        @font-face{
+            font-family: '#{$font}';
+            src: url('fonts/#{$font}.ttf') format('truetype');
+        }
+    } 
+}
+
+@include getFonts();

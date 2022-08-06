@@ -1,0 +1,76 @@
+@media screen and (min-width: 1000px){
+
+    .header{
+
+        display:flex;
+        align-items: center;
+        gap: 88px;
+
+        &__logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &-menu{
+            display: flex;
+            flex: 1 0 25%;
+            justify-content: space-between;
+            gap: 88px;
+            padding-top: 12px;
+
+            &__button{
+                display: none;
+            }
+
+            &-container{
+                display: flex;
+                flex-basis: 100%;
+                justify-content:space-between;
+                gap: 80px;
+            }
+            
+            &__nav{
+                display: flex;
+                flex: 1 0 25%;
+                ul{
+                    display: flex;
+                    flex: auto;
+                    justify-content: space-around;
+                }
+            }
+
+            &__link{
+
+
+                
+                &:hover{
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+                }
+
+                &_active{
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+                }
+            }
+
+            &__shopping-basket{
+                display: flex;
+                align-self: center;
+                align-items: center;
+                gap: 10px;
+            }
+
+        }
+    }
+
+    @media (max-width: 1185px){
+
+        .header{
+            gap: 10px;
+
+            &-menu-container{
+                gap: 40px;
+            }
+        }
+    }
+}
